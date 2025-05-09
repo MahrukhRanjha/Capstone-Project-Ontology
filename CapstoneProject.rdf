@@ -180,7 +180,6 @@
     <!-- http://schema.org/isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://schema.org/isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
     </owl:ObjectProperty>
@@ -324,45 +323,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FrameSize -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FrameSize">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
-        <rdfs:range rdf:resource="http://schema.org/videoFrameSize"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#PosterFormat -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#PosterFormat">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Poster"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#VideoQuality -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#VideoQuality">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
-        <rdfs:range rdf:resource="http://schema.org/videoQuality"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videoformat -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videoformat">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
-        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#aiModelName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#aiModelName">
@@ -494,6 +454,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#frameSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#frameSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://schema.org/videoFrameSize"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#frameworkName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#frameworkName">
@@ -550,6 +519,15 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
         <rdfs:range rdf:resource="http://schema.org/telephone"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#posterFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#posterFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Poster"/>
+        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
     </owl:DatatypeProperty>
     
 
@@ -620,6 +598,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
+        <rdfs:range rdf:resource="http://schema.org/startDate"/>
     </owl:DatatypeProperty>
     
 
@@ -670,6 +649,24 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
         <rdfs:range rdf:resource="http://schema.org/version"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoQuality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://schema.org/videoQuality"/>
     </owl:DatatypeProperty>
     
 
@@ -814,6 +811,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#DesignDocument">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FinalReport"/>
     </owl:Class>
     
 
